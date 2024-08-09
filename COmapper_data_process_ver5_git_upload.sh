@@ -12,19 +12,19 @@
 
 #User defined arguments
 #folder location to make output files, ensure free space more than 2Tb (~200Gb fq.gz file standard)
-workdir=/datasets/data_2/dohwan/Nanopore/240415_1000seedling/WT/raw
+workdir=
 #number of threads
-corenum=10
+corenum=
 #name of dataset
-name=WTseedling
+name=
 #location of original fq.gz file
-org=/datasets/data_2/dohwan/Nanopore/240415_1000seedling/WT/Col_Ler_F2_cleandata.fq.gz
+org=
 
 #resource file location
 #location of masksam.awk file
-awkloc=/datasets/data_1/dohwan/Nanopore/masksam.awk
+awkloc=resources/masksam.awk
 #location of reference genome mmi file
-ref=/home/dohwan/refgenome/TAIR10/TAIR10.mmi
+ref=
 
 #------------------------------------------------------------------------------------------------------------------#
 
