@@ -68,7 +68,8 @@ linux machine with more than 2Tb storage space, 6-core cpu, 32Gb ram
 
 5. After COmapper_data_process_ver5.sh script run end, Check output folder have .tsv file(s) for COmapper analysis.
 
-6. COmapper_ver1.2.4_command.py requires 4 options;
+6. COmapper_ver1.2.4_command.py requires 4 options
+
    --inputfolder (-i) : input folder location (which includes .tsv files), default: current location
    --snpfile (-s) : snp file location, default: current location/collerF2.masked.tiger.txt
    --threads (-t) : thread number, default: 6
