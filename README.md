@@ -20,7 +20,7 @@ coller_marker_v4.6.tsv (SNP list file)
 
 # minimap index file setup
 Download genome sequence
-TAIR10 sequenc available at https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001735.3/
+TAIR10 sequence available at https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001735.3/
 create index file
 $ minimap2 -d TAIR10.mmi TAIR10.fasta
 
@@ -35,18 +35,18 @@ Test input fq file were provided (fastq_sample.fq)
 1.	Download Nanopore sequencing results as fq.gz file format in the raw data storage folder
 2.	Change User defined arguments of “COmapper_data_process_ver5_git_upload.sh” file
     workdir: folder location to make output files, ensure free space more than 2Tb (~200Gb fq.gz file standard)
-    corenum: number of threads to use
-    name: name of dataset
-    org: location of original fq.gz file
-3.	Check resource files
-    awkloc: location of masksam.awk file
-    ref: location of reference genome mmi file (TAIR10.mmi)
-4.	Save changes and run COmapper_data_process_ver5.sh
-5.	After COmapper_data_process_ver5.sh script run end, Check output folder have .tsv file(s) for COmapper analysis.
-6.	COmapper_ver1.2.4_command.py requires 4 options;
-    --inputfolder (-i) : input folder location (which includes .tsv files), default: current location
-    --snpfile (-s) : snp file location, default: current location/collerF2.masked.tiger.txt
-    --threads (-t) : thread number, default: 6
-    --output (-o) : output file name, default: result.csv
-    set options via command line arguments or manually write on the python code and run COmapper_ver1.2.5_git_upload.py
-7.	COmapper will return genotyping and classification information via standard output and crossover molecule information with .csv file.
+  	corenum: number of threads to use
+  	name: name of dataset
+  	org: location of original fq.gz file
+3. Check resource files
+   awkloc: location of masksam.awk file
+   ref: location of reference genome mmi file (TAIR10.mmi)
+4. Save changes and run COmapper_data_process_ver5.sh
+5. After COmapper_data_process_ver5.sh script run end, Check output folder have .tsv file(s) for COmapper analysis.
+6. COmapper_ver1.2.4_command.py requires 4 options;
+   --inputfolder (-i) : input folder location (which includes .tsv files), default: current location
+   --snpfile (-s) : snp file location, default: current location/collerF2.masked.tiger.txt
+   --threads (-t) : thread number, default: 6
+   --output (-o) : output file name, default: result.csv
+   set options via command line arguments or manually write on the python code and run COmapper_ver1.2.5_git_upload.py
+7. COmapper will return genotyping and classification information via standard output and crossover molecule information with .csv file.
