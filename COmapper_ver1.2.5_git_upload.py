@@ -4,7 +4,6 @@ COmapper for recombinant molecule detection from Nanopore long read sequence
 Initiated on 2021.09.07.
 
 @author: Dohwan Byun
-@coworked with Jaebeom Kim
 
 Version information 
 ver0.0(210907): File input, output backbone, CIGAR transformation and genotyping
