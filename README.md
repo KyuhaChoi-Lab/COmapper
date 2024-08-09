@@ -71,9 +71,13 @@ linux machine with more than 2Tb storage space, 6-core cpu, 32Gb ram
 6. COmapper_ver1.2.4_command.py requires 4 options
 
    --inputfolder (-i) : input folder location (which includes .tsv files), default: current location
+   
    --snpfile (-s) : snp file location, default: current location/collerF2.masked.tiger.txt
+
    --threads (-t) : thread number, default: 6
+
    --output (-o) : output file name, default: result.csv
+
    set options via command line arguments or manually write on the python code and run COmapper_ver1.2.5_git_upload.py
 
-7. COmapper will return genotyping and classification information via standard output and crossover molecule information with .csv file.
+8. COmapper will return genotyping and classification information via standard output and crossover molecule information with .csv file.
