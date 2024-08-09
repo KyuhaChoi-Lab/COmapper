@@ -430,7 +430,7 @@ def main():
         #command line arguments
         parser = argparse.ArgumentParser(description='process input folder location')
         parser.add_argument('--inputfolder', '-i', help = 'input folder location, default: current location', default = os.getcwd())
-        parser.add_argument('--snpfile', '-s', help='snp file location, default: collerF2.masked.tiger.txt', default=os.getcwd()+'/collerF2.masked.tiger.txt')
+        parser.add_argument('--snpfile', '-s', help='snp file location, default: collerF2.masked.tiger.txt', default=os.getcwd()+'/coller_marker_v4.6.txt')
         parser.add_argument('--threads', '-t', help = 'thread number, default: 6', default = 6)
         parser.add_argument('--output', '-o', help = 'output file name, default: result.csv', default = "result.csv")
         args = parser.parse_args()
@@ -444,10 +444,10 @@ def main():
 
     # Read a file of reference SNPs
     #manual input folder and snp list
-    # INPUTFOLDER = '/datasets/data_2/dohwan/Nanopore/231123_randomsampling/recq4_pollen/output'
-    # SNPLIST = '/datasets/data_1/dohwan/Nanopore/resources/collerF2.masked.tiger.txt'
-    # OUTPUTFILE = "result_recq4_repeat_ver1_2_3.csv"
-    # CPUNUMBER=10
+    # INPUTFOLDER = ''
+    # SNPLIST = 'resources/coller_marker_v4.6.txt'
+    # OUTPUTFILE = "result.csv"
+    # CPUNUMBER=6
     
     print("input folder:", INPUTFOLDER)
     print("snpfile: ", SNPLIST)
