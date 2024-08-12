@@ -1,3 +1,11 @@
 # 1. coller_marker_v4.6.txt : Col/Ler high-quality SNP information for COmapper run
 # 2. masksam.awk : awk script for masking low quality bases
-# 3. TAIR10.mmi : (not uploaded via size limit) TAIR10 reference genome for alignment nanopore reads, available at https://drive.google.com/file/d/1GAheFPEAJ2ZFfWhCF95xQHKhvH7gTUg3/view?usp=drive_link
+# 3. TAIR10.mmi : (not uploaded via size limit) TAIR10 reference genome for alignment nanopore reads
+
+    available at https://drive.google.com/file/d/1GAheFPEAJ2ZFfWhCF95xQHKhvH7gTUg3/view?usp=drive_link
+
+    Download genome sequence
+    TAIR10 sequenc available at https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001735.3/
+
+    create index file
+    $ minimap2 -d TAIR10.mmi TAIR10.fasta
