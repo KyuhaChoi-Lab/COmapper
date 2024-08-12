@@ -29,7 +29,6 @@ ref=
 #------------------------------------------------------------------------------------------------------------------#
 
 #making workspace
-mkdir -p $workdir/nanoplot
 mkdir -p ${workdir%raw}output
 cd $workdir
 
@@ -102,23 +101,23 @@ wait $WORK_PID2
 
 echo "output file made"
 
-#remove intermediate files (for free space)
+#remove intermediate files (optional, for free space)
 
-#copied fq file
+## copied fq file
 #rm $copy
 #sam file
 #rm $sam
 #bam file
 #rm $bam
-#sorted bam, bai (index) file
+## sorted bam, bai (index) file
 #rm $sorted
 #rm $sorted.bai
-#read filtered bam, bai (index) file
+## read filtered bam, bai (index) file
 #rm $sbbout
 #rm $sbbout.bai
-#read filtered sam file
+## read filtered sam file
 #rm $samsbb
-#splited read filtered sam files
+## splited read filtered sam files
 #rm -r $name.sbbsplit.*.sam
-#splited base filtered sam files
+## splited base filtered sam files
 #rm -r $name.filtered.*.sam
