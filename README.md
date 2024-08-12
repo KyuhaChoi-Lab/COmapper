@@ -45,6 +45,12 @@ linux machine with more than 2Tb storage space, 6-core cpu, 32Gb ram
 
 # Conda environment setup
 
+    Create conda environment by following steps
+
+    $ conda create –n COmapper
+    $ conda install python=3.7.13
+    $ conda install pandas=1.1.3
+    $ conda install typing-extensions=4.7.1
 
 # Input data
     Nanopore sequencing reads with .fq.gz (or .fq) format
@@ -68,7 +74,11 @@ linux machine with more than 2Tb storage space, 6-core cpu, 32Gb ram
 
 5. After COmapper_data_process_ver5.sh script run end, Check output folder have .tsv file(s) for COmapper analysis.
 
-6. COmapper_ver1.2.4_command.py requires 4 options
+6. Activate conda environment for python script
+
+    $ conda activate COmapper
+
+8. COmapper_ver1.2.5_git_upload.py requires 4 options
 
    --inputfolder (-i) : input folder location (which includes .tsv files), default: current location
    
@@ -80,4 +90,6 @@ linux machine with more than 2Tb storage space, 6-core cpu, 32Gb ram
 
    set options via command line arguments or manually write on the python code and run COmapper_ver1.2.5_git_upload.py
 
-8. COmapper will return genotyping and classification information via standard output and crossover molecule information with .csv file.
+   $ python COmapper_ver1.2.5_git_upload.py -i INPUTFOLDER -s SNPFILE -t THREADS -o OUTPUTFILE
+
+10. COmapper will return genotyping and classification information via standard output and crossover molecule information with .csv file.
