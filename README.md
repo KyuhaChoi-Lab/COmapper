@@ -80,7 +80,7 @@ Test input file were provided (fastq_sample.fq)
 
 6. Activate conda environment for Python script.
 
-    $ conda activate COmapper
+        $ conda activate COmapper
 
 7. COmapper_ver1.2.5_git_upload.py requires 4 options
 
@@ -94,6 +94,6 @@ Test input file were provided (fastq_sample.fq)
 
    Set options via command line arguments or manually write on the python code and run COmapper_ver1.2.5_git_upload.py
 
-   $ python COmapper_ver1.2.5_git_upload.py -i INPUTFOLDER -s SNPFILE -t THREADS -o OUTPUTFILE
+       $ python COmapper_ver1.2.5_git_upload.py -i INPUTFOLDER -s SNPFILE -t THREADS -o OUTPUTFILE
 
 8. COmapper will return genotyping and classification information via standard output and crossover molecule information in a .csv file.
