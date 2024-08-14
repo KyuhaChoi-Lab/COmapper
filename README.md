@@ -16,7 +16,7 @@ This research was conducted in collaboration with the following individuals: Doh
 
 The manuscript is available at
 
-# Program version information:
+# Program version information
     
 COmapper_data_process_ver5_git_upload.sh (2023.09.07 backbone, 2024.08.12 final edit)
 
