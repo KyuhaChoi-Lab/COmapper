@@ -1,15 +1,15 @@
 # COmapper
 
-    COmapper: High-resolution mapping of meiotic crossovers by long-read sequencing in Arabidopsis
+    COmapper: High-resolution mapping of meiotic crossovers by long-read sequencing in _Arabidopsis_
 
-    The project was initiated by Prof. Choi and the code is written by Dohwan Byun at Pohang University of Science and Technology (POSTECH) Plant Genomic Recombination (PGR) Laboratory.
+    The project was initiated by Prof. Kyuha Choi, and the code was written by Dohwan Byun at the Plant Genomic Recombination (PGR) Laboratory of Pohang University of Science and Technology (POSTECH).
 
-    This research was conducted in collaborations with the following people: Dohwan Byun1, Namil Son1, Heejin Kim1, Jaeil Kim1, Jihye Park1, Sang-jun Park1, Hyein Kim1, Seula Lee2, Youbong Hyun2, Piotr A. Ziolkowski3, Ian R. Henderson4, and Kyuha Choi1†
+    This research was conducted in collaboration with the following individuals: Dohwan Byun¹, Namil Son¹, Heejin Kim¹, Jaeil Kim¹, Jihye Park¹, Sang-jun Park¹, Hyein Kim¹, Seula Lee², Youbong Hyun², Piotr A. Ziolkowski³, Ian R. Henderson⁴, and Kyuha Choi¹†.
 
-    1Department of Life Sciences, Pohang University of Science and Technology, Pohang, Gyeongbuk, Republic of Korea
-    2School of Biological Sciences, Seoul National University, Seoul, Republic of Korea
-    3Laboratory of Genome Biology, Institute of Molecular Biology and Biotechnology, Adam Mickiewicz University, Poznań, Poland
-    4Department of Plant Sciences, University of Cambridge, Cambridge, UK
+    ¹Department of Biological Sciences, Pohang University of Science and Technology, Pohang, Gyeongbuk, Republic of Korea
+    ²School of Biological Sciences, Seoul National University, Seoul, Republic of Korea
+    ³Laboratory of Genome Biology, Institute of Molecular Biology and Biotechnology, Adam Mickiewicz University, Poznań, Poland
+    ⁴Department of Plant Sciences, University of Cambridge, Cambridge, UK
 
     The manuscript is available at
 
@@ -56,7 +56,7 @@
 
 # Input data
     Nanopore sequencing reads with .fq.gz (or .fq) format
-    Test input fq file were provided (fastq_sample.fq)
+    Test input file were provided (fastq_sample.fq)
 
 # Working procedure
 
@@ -72,9 +72,9 @@
    awkloc: location of masksam.awk file
    ref: location of reference genome mmi file (TAIR10.mmi)
 
-4. Save the changes and run COmapper_data_process_ver5.sh.
+4. Save and run COmapper_data_process_ver5.sh.
 
-5. After COmapper_data_process_ver5.sh script run end, Check output folder have .tsv file(s) for COmapper analysis.
+5. After running COmapper_data_process_ver5.sh, check the output folder for a .tsv file for COmapper analysis.
 
 6. Activate conda environment for Python script.
 
@@ -90,8 +90,8 @@
 
    --output (-o) : output file name, default: result.csv
 
-   set options via command line arguments or manually write on the python code and run COmapper_ver1.2.5_git_upload.py
+   Set options via command line arguments or manually write on the python code and run COmapper_ver1.2.5_git_upload.py
 
    $ python COmapper_ver1.2.5_git_upload.py -i INPUTFOLDER -s SNPFILE -t THREADS -o OUTPUTFILE
 
-8. COmapper will return genotyping and classification information via standard output and crossover molecule information with .csv file.
+8. COmapper will return genotyping and classification information via standard output and crossover molecule information in a .csv file.
