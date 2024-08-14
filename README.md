@@ -67,29 +67,29 @@ Test input file were provided (fastq_sample.fq)
 
 ## Working procedure
 
-1.	Download Nanopore sequencing results as fq.gz file format in the raw data storage folder.
+1.	Download the Nanopore sequencing results as a fq.gz file in the raw data folder.
 
-2.	Change User defined arguments of “COmapper_data_process_ver5_git_upload.sh” file
-    workdir: folder location to make output files, ensure free space more than 2Tb (~200Gb fq.gz file standard)
-  	corenum: number of threads to use
-  	name: name of dataset
-  	org: location of original fq.gz file
+2.	Change the user-defined arguments of the 'COmapper_data_process_ver5_git_upload.sh' file to make output files.
+    - workdir: output file location, ensure there is more than 2Tb of free space.
+  	- corenum: number of threads to use.
+  	- name: name of dataset.
+  	- org: location of original fq.gz file.
 
-3. Check resource files
-   awkloc: location of masksam.awk file
-   ref: location of reference genome mmi file (TAIR10.mmi)
+3. Check resource files:
+   - awkloc: location of 'masksam.awk' file.
+   - ref: location of reference genome mmi file ('TAIR10.mmi').
 
-4. Save and run COmapper_data_process_ver5.sh.
+4. Save and run 'COmapper_data_process_ver5.sh'.
 
-5. After running COmapper_data_process_ver5.sh, check the output folder for a .tsv file for COmapper analysis.
+5. After running 'COmapper_data_process_ver5.sh', check the output folder for a .tsv files for COmapper analysis.
 
-6. Activate conda environment for Python script.
+6. Activate the conda environment.
 
         $ conda activate COmapper
 
-7. COmapper_ver1.2.5_git_upload.py requires 4 options
+7. 'COmapper_ver1.2.5_git_upload.py' requires four options
 
-   --inputfolder (-i) : input folder location (which includes .tsv files), default: current location
+   --inputfolder (-i) : input folder location (including .tsv files), default: current location
    
    --snpfile (-s) : snp file location, default: current location/collerF2.masked.tiger.txt
 
@@ -97,7 +97,7 @@ Test input file were provided (fastq_sample.fq)
 
    --output (-o) : output file name, default: result.csv
 
-   Set options via command line arguments or manually write on the python code and run COmapper_ver1.2.5_git_upload.py
+   Set options via command line arguments or manually write on the python code and run 'COmapper_ver1.2.5_git_upload.py'.
 
        $ python COmapper_ver1.2.5_git_upload.py -i INPUTFOLDER -s SNPFILE -t THREADS -o OUTPUTFILE
 
