@@ -1,17 +1,17 @@
 # COmapper
 
-    COmapper: High-resolution mapping of meiotic crossovers by long-read sequencing in _Arabidopsis_
+COmapper: High-resolution mapping of meiotic crossovers by long-read sequencing in _Arabidopsis_
 
-    The project was initiated by Prof. Kyuha Choi, and the code was written by Dohwan Byun at the Plant Genomic Recombination (PGR) Laboratory of Pohang University of Science and Technology (POSTECH).
+The project was initiated by Prof. Kyuha Choi, and the code was written by Dohwan Byun at the Plant Genomic Recombination (PGR) Laboratory of Pohang University of Science and Technology (POSTECH).
 
-    This research was conducted in collaboration with the following individuals: Dohwan Byun¹, Namil Son¹, Heejin Kim¹, Jaeil Kim¹, Jihye Park¹, Sang-jun Park¹, Hyein Kim¹, Seula Lee², Youbong Hyun², Piotr A. Ziolkowski³, Ian R. Henderson⁴, and Kyuha Choi¹†.
+This research was conducted in collaboration with the following individuals: Dohwan Byun¹, Namil Son¹, Heejin Kim¹, Jaeil Kim¹, Jihye Park¹, Sang-jun Park¹, Hyein Kim¹, Seula Lee², Youbong Hyun², Piotr A. Ziolkowski³, Ian R. Henderson⁴, and Kyuha Choi¹†.
 
-    ¹Department of Biological Sciences, Pohang University of Science and Technology, Pohang, Gyeongbuk, Republic of Korea
-    ²School of Biological Sciences, Seoul National University, Seoul, Republic of Korea
-    ³Laboratory of Genome Biology, Institute of Molecular Biology and Biotechnology, Adam Mickiewicz University, Poznań, Poland
-    ⁴Department of Plant Sciences, University of Cambridge, Cambridge, UK
+¹Department of Biological Sciences, Pohang University of Science and Technology, Pohang, Gyeongbuk, Republic of Korea
+²School of Biological Sciences, Seoul National University, Seoul, Republic of Korea
+³Laboratory of Genome Biology, Institute of Molecular Biology and Biotechnology, Adam Mickiewicz University, Poznań, Poland
+⁴Department of Plant Sciences, University of Cambridge, Cambridge, UK
 
-    The manuscript is available at
+The manuscript is available at
 
 # Program version information:
     
