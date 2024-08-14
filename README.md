@@ -63,7 +63,7 @@ Create conda environment by following steps
 ## Input data
 Nanopore sequencing reads with .fq.gz (or .fq) format
 
-Test input file were provided (fastq_sample.fq)
+Test input file were provided (`fastq_sample.fq`)
 
 ## Working procedure
 
