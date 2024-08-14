@@ -2,31 +2,33 @@
 
 **COmapper: High-resolution mapping of meiotic crossovers by long-read sequencing in _Arabidopsis thaliana_**
 
-The project was initiated by Prof. Kyuha Choi, and the code was written by Dohwan Byun at the Plant Genomic Recombination (PGR) Laboratory of Pohang University of Science and Technology (POSTECH).
+### Contributions
 
-This research was conducted in collaboration with the following individuals: Dohwan Byun¹, Namil Son¹, Heejin Kim¹, Jaeil Kim¹, Jihye Park¹, Sang-jun Park¹, Hyein Kim¹, Seula Lee², Youbong Hyun², Piotr A. Ziolkowski³, Ian R. Henderson⁴, and Kyuha Choi¹†.
+- The project was initiated by Prof. Kyuha Choi, and the code was written by Dohwan Byun at the Plant Genomic Recombination (PGR) Laboratory of Pohang University of Science and Technology (POSTECH).
 
-¹Department of Biological Sciences, Pohang University of Science and Technology, Pohang, Gyeongbuk, Republic of Korea
+- This research was conducted in collaboration with the following individuals: Dohwan Byun¹, Namil Son¹, Heejin Kim¹, Jaeil Kim¹, Jihye Park¹, Sang-jun Park¹, Hyein Kim¹, Seula Lee², Youbong Hyun², Piotr A. Ziolkowski³, Ian R. Henderson⁴, and Kyuha Choi¹†.
 
-²School of Biological Sciences, Seoul National University, Seoul, Republic of Korea
+  ¹Department of Biological Sciences, Pohang University of Science and Technology, Pohang, Gyeongbuk, Republic of Korea
 
-³Laboratory of Genome Biology, Institute of Molecular Biology and Biotechnology, Adam Mickiewicz University, Poznań, Poland
+  ²School of Biological Sciences, Seoul National University, Seoul, Republic of Korea
 
-⁴Department of Plant Sciences, University of Cambridge, Cambridge, UK
+  ³Laboratory of Genome Biology, Institute of Molecular Biology and Biotechnology, Adam Mickiewicz University, Poznań, Poland
 
-The manuscript is available at
+  ⁴Department of Plant Sciences, University of Cambridge, Cambridge, UK
 
-# Program version information
+- The manuscript is available at
+
+## Program version information
     
 COmapper_data_process_ver5_git_upload.sh (2023.09.07 backbone, 2024.08.12 final edit)
 
 COmapper_ver1.2.5_git_upload.py (2024.04.12 backbone, 2024.08.12 final edit)
 
-# System requirement
+## System requirement
 
 linux machine with more than 2Tb storage space, 6-core cpu, 32Gb ram
 
-# Required bioinformatics programs
+## Required bioinformatics programs
     
 minimap2 https://github.com/lh3/minimap2
 
@@ -34,7 +36,7 @@ samtools https://www.htslib.org/
 
 sambamba https://lomereiter.github.io/sambamba/
 
-# Required files (on resources folder)
+## Required files (on resources folder)
     
     masksam.awk (script for basefiltering)
     
@@ -42,7 +44,7 @@ sambamba https://lomereiter.github.io/sambamba/
 
     coller_marker_v4.6.tsv (SNP list file)
 
-# minimap index file setup
+## minimap index file setup
     
 Download genome sequence
 
@@ -52,7 +54,7 @@ create index file
 
     $ minimap2 -d TAIR10.mmi TAIR10.fasta
 
-# Conda environment setup
+## Conda environment setup
 
 Create conda environment by following steps
 
@@ -62,12 +64,12 @@ Create conda environment by following steps
     $ conda install pandas=1.1.3
     $ conda install typing-extensions=4.7.1
 
-# Input data
+## Input data
 Nanopore sequencing reads with .fq.gz (or .fq) format
 
 Test input file were provided (fastq_sample.fq)
 
-# Working procedure
+## Working procedure
 
 1.	Download Nanopore sequencing results as fq.gz file format in the raw data storage folder.
 
