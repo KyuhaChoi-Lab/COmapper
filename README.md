@@ -28,9 +28,11 @@ linux machine with more than 2Tb storage space, 6-core cpu, 32Gb ram
 
 # Required bioinformatics programs
     
-    minimap2 https://github.com/lh3/minimap2
-    samtools https://www.htslib.org/
-    sambamba https://lomereiter.github.io/sambamba/
+minimap2 https://github.com/lh3/minimap2
+
+samtools https://www.htslib.org/
+
+sambamba https://lomereiter.github.io/sambamba/
 
 # Required files (on resources folder)
     
