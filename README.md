@@ -47,6 +47,7 @@ linux machine with more than 2Tb storage space, 6-core cpu, 32Gb ram
 TAIR10 sequence available at https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001735.3/
     
 - create index file
+
     $ minimap2 -d TAIR10.mmi TAIR10.fasta
 
 ## Conda environment setup
