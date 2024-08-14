@@ -1,6 +1,6 @@
 # COmapper
 
-COmapper: High-resolution mapping of meiotic crossovers by long-read sequencing in _Arabidopsis thaliana_
+**COmapper: High-resolution mapping of meiotic crossovers by long-read sequencing in _Arabidopsis thaliana_**
 
 The project was initiated by Prof. Kyuha Choi, and the code was written by Dohwan Byun at the Plant Genomic Recombination (PGR) Laboratory of Pohang University of Science and Technology (POSTECH).
 
