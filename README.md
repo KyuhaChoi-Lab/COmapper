@@ -19,9 +19,8 @@
 
 ## Program version information
     
-COmapper_data_process_ver5_git_upload.sh (2023.09.07 backbone, 2024.08.12 final edit)
-
-COmapper_ver1.2.5_git_upload.py (2024.04.12 backbone, 2024.08.12 final edit)
+- COmapper_data_process_ver5_git_upload.sh (2023.09.07 backbone, 2024.08.12 final edit)
+- COmapper_ver1.2.5_git_upload.py (2024.04.12 backbone, 2024.08.12 final edit)
 
 ## System requirement
 
@@ -43,17 +42,16 @@ linux machine with more than 2Tb storage space, 6-core cpu, 32Gb ram
 
 ## minimap index file setup
     
-Download genome sequence
+- Download genome sequence
 
 TAIR10 sequence available at https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001735.3/
     
-create index file
-
+- create index file
     $ minimap2 -d TAIR10.mmi TAIR10.fasta
 
 ## Conda environment setup
 
-Create conda environment by following steps
+- Create conda environment by following steps
 
     $ conda create –n COmapper
     $ conda activate COmapper
