@@ -5,7 +5,6 @@
 ### Contributions
 
 - The project was initiated by Prof. Kyuha Choi, and the code was written by Dohwan Byun at the Plant Genomic Recombination (PGR) Laboratory of Pohang University of Science and Technology (POSTECH).
-
 - This research was conducted in collaboration with the following individuals: Dohwan Byun¹, Namil Son¹, Heejin Kim¹, Jaeil Kim¹, Jihye Park¹, Sang-jun Park¹, Hyein Kim¹, Seula Lee², Youbong Hyun², Piotr A. Ziolkowski³, Ian R. Henderson⁴, and Kyuha Choi¹†.
 
   ¹Department of Biological Sciences, Pohang University of Science and Technology, Pohang, Gyeongbuk, Republic of Korea
@@ -30,11 +29,9 @@ linux machine with more than 2Tb storage space, 6-core cpu, 32Gb ram
 
 ## Required bioinformatics programs
     
-minimap2 https://github.com/lh3/minimap2
-
-samtools https://www.htslib.org/
-
-sambamba https://lomereiter.github.io/sambamba/
+- minimap2 https://github.com/lh3/minimap2
+- samtools https://www.htslib.org/
+- sambamba https://lomereiter.github.io/sambamba/
 
 ## Required files (on resources folder)
     
