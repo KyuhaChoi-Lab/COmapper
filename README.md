@@ -1,6 +1,6 @@
 # COmapper
 
-COmapper: High-resolution mapping of meiotic crossovers by long-read sequencing in _Arabidopsis_
+COmapper: High-resolution mapping of meiotic crossovers by long-read sequencing in _Arabidopsis thaliana_
 
 The project was initiated by Prof. Kyuha Choi, and the code was written by Dohwan Byun at the Plant Genomic Recombination (PGR) Laboratory of Pohang University of Science and Technology (POSTECH).
 
@@ -15,12 +15,12 @@ The manuscript is available at
 
 # Program version information:
     
-    COmapper_data_process_ver5_git_upload.sh (2023.09.07 backbone, 2024.08.12 final edit)
-    COmapper_ver1.2.5_git_upload.py (2024.04.12 backbone, 2024.08.12 final edit)
+COmapper_data_process_ver5_git_upload.sh (2023.09.07 backbone, 2024.08.12 final edit)
+COmapper_ver1.2.5_git_upload.py (2024.04.12 backbone, 2024.08.12 final edit)
 
 # System requirement
 
-    linux machine with more than 2Tb storage space, 6-core cpu, 32Gb ram
+linux machine with more than 2Tb storage space, 6-core cpu, 32Gb ram
 
 # Required bioinformatics programs
     
@@ -38,15 +38,15 @@ The manuscript is available at
 
 # minimap index file setup
     
-    Download genome sequence
+Download genome sequence
     TAIR10 sequence available at https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001735.3/
     
-    create index file
+create index file
     $ minimap2 -d TAIR10.mmi TAIR10.fasta
 
 # Conda environment setup
 
-    Create conda environment by following steps
+Create conda environment by following steps
 
     $ conda create –n COmapper
     $ conda activate COmapper
@@ -55,8 +55,8 @@ The manuscript is available at
     $ conda install typing-extensions=4.7.1
 
 # Input data
-    Nanopore sequencing reads with .fq.gz (or .fq) format
-    Test input file were provided (fastq_sample.fq)
+Nanopore sequencing reads with .fq.gz (or .fq) format
+Test input file were provided (fastq_sample.fq)
 
 # Working procedure
 
