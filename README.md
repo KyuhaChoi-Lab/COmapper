@@ -40,27 +40,31 @@ First, clone this git repository.
 We recommend setting up conda environment to manage the dependencies for COmapper.
 You can use the provided environment.yaml to create conda environment with all the required packagers.
 
+```
     $ conda env create --name COmapper --file environment.yaml
+```
 
 ### Preparing index file of TAIR10 for minimap2
 1. Download TAIR10 reference genome sequence from https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001735.3/
 2. Create index file
 
+```
     $ minimap2 -d TAIR10.mmi TAIR10.fasta
+```
 
-### Explanation on the files in resources directory
+### Explanation of the files in resources directory
 
-  `masksam.awk` (script for basefiltering)
+  `masksam.awk`: script for basefiltering
     
-  `TAIR10.mmi` (minimap index file)
+  `TAIR10.mmi`: minimap index file
 
-  `coller_marker_v4.6.tsv` (SNP list file)
+  `coller_marker_v4.6.tsv`: SNP list file
 
     
 ### Input data
-Nanopore sequencing reads in .fq.gz (or .fq) format
+COmapper requires Nanopore sequencing reads in `.fq.gz` (or `.fq`) format.
 
-Test input file is provided (`test.fq.gz`)
+A test input file is provided in the `raw` directory (`test.fq.gz`).
 
 ## Working procedure
 
@@ -77,12 +81,16 @@ Test input file is provided (`test.fq.gz`)
 
 3. Activte the conda environment
 
+```
     $ conda activate COmapper
+```
 
 4. Run the `COmapper_data_process_ver5.sh` script:
 
+```
     $ source variables.sh
     $ bash COmapper_data_process_ver5.sh
+```
 
 5. The output of `COmapper_data_process_ver5.sh` is stored in the `output/tsv` directory. At this stage, high-quality Nanopore reads are retained, and low-quality bases are masked. The next step is to detect crossover molecules from the .tsv files using `COmapper_ver1.2.5_git_upload.py`.
 
@@ -98,6 +106,8 @@ Test input file is provided (`test.fq.gz`)
 
     You can set these options via command line arguments or by editing the Python script directly. Then, run `COmapper_ver1.2.5_git_upload.py`:
 
+```
        $ python COmapper_ver1.2.5_git_upload.py -i INPUTFOLDER -s SNPFILE -t THREADS -o OUTPUTFILE
+```
 
 8. COmapper will return genotyping and classification information via standard output and crossover molecule information in a .csv file.
