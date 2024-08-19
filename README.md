@@ -123,6 +123,7 @@ A test input file is provided in the `raw` directory (`test.fq.gz`).
    - types: The string with SNP genotype excluding 'N’ types
    - SNP_genotype: The string with the genotyping result of all SNPs in the read
    - haplotype: The type of read as classified by COmapper.
+
        1: C-L simple crossover
      
        2: L-C simple crossover
