@@ -123,12 +123,14 @@ A test input file is provided in the `raw` directory (`test.fq.gz`).
    - types: The string with SNP genotype excluding 'N’ types
    - SNP_genotype: The string with the genotyping result of all SNPs in the read
    - haplotype: The type of read as classified by COmapper.
-       1: C-L simple crossover
-       2: L-C simple crossover
-       11~14: C-L gene conversion associated crossover
-       15~18: L-C gene conversion associated crossover
+     1: C-L simple crossover
+     2: L-C simple crossover
+     11~14: C-L gene conversion associated crossover
+     15~18: L-C gene conversion associated crossover
    - CO_info: The information of the crossover site in the read with five elements. [chromosome number, nearest SNP position before crossover site, nearest SNP position after crossover site, mid-point of two nearest SNP positions, width of two nearest SNP positions
+
 output file example:
+
       ,read_id,chr_num,pos,length,num_of_snp,snp_pos,bases,types,SNP_genotype,haplotype,CO_info
       0,178316,3,15109545,7676,30,"[15113299, 15114197, 15114345, 15114454, 15114543, 15114782, 15114786, 15114795, 15114932, 15114953, 15114962, 15115000, 15115018, 15115074, 15115081, 15115174, 15115207, 15115423, 15115472, 15115724, 15115780, 15116162, 15116318, 15116369, 15116394, 15116704, 15116983, 15117110, 15117127, 15117215]","['C', 'N', 'N', 'N', 'N', 'G', 'G', 'N', 'G', 'N', 'N', 'C', 'N', 'N', 'N', 'A', 'N', 'C', 'N', 'N', 'T', 'N', 'N', 'N', 'C', 'C', 'G', 'N', 'G', 'G']",CCLCCCCCLLLL,CNNNNCLNNNNCNNNCNCNNCNNNCLLNLL,1,"[3, 15116394, 15116704, 15116549.0, 310]"
       1,181082,3,15139535,7267,28,"[15140158, 15140378, 15140612, 15140768, 15141097, 15142546, 15142572, 15142588, 15142597, 15142801, 15142830, 15142868, 15142920, 15142959, 15143104, 15143162, 15143812, 15143837, 15143927, 15144535, 15144797, 15145079, 15145100, 15145113, 15146701, 15146706, 15146741, 15146789]","['G', 'N', 'N', 'N', 'G', 'N', 'G', 'N', 'A', 'N', 'A', 'N', 'G', 'C', 'N', 'N', 'N', 'G', 'T', 'C', 'C', 'N', 'N', 'T', 'G', 'G', 'N', 'C']",LLCLCLLLLCLCCCC,LNNNLNCNLNCNLLNNNLLCLNNCCCNC,11,"[3, 15144535, 15144797, 15144666.0, 262]"
