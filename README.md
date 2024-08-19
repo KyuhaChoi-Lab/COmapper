@@ -123,10 +123,14 @@ A test input file is provided in the `raw` directory (`test.fq.gz`).
    - types: The string with SNP genotype excluding 'N’ types
    - SNP_genotype: The string with the genotyping result of all SNPs in the read
    - haplotype: The type of read as classified by COmapper.
-     1: C-L simple crossover
-     2: L-C simple crossover
-     11~14: C-L gene conversion associated crossover
-     15~18: L-C gene conversion associated crossover
+       1: C-L simple crossover
+     
+       2: L-C simple crossover
+     
+       11~14: C-L gene conversion associated crossover
+     
+       15~18: L-C gene conversion associated crossover
+     
    - CO_info: The information of the crossover site in the read with five elements. [chromosome number, nearest SNP position before crossover site, nearest SNP position after crossover site, mid-point of two nearest SNP positions, width of two nearest SNP positions
 
 output file example:
