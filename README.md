@@ -79,22 +79,22 @@ A test input file is provided in the `raw` directory (`test.fq.gz`).
     - `awkloc`: location of `masksam.awk` file.
     - `ref`: location of the TAIR10 minimap index file (`TAIR10.mmi`).
 
-3. Activte the conda environment
+4. Activte the conda environment
 
 ```
     $ conda activate COmapper
 ```
 
-4. Run the `COmapper_data_process_ver5.sh` script:
+5. Run the `COmapper_data_process_ver5.sh` script:
 
 ```
     $ source variables.sh
     $ bash COmapper_data_process_ver5.sh
 ```
 
-5. The output of `COmapper_data_process_ver5.sh` is stored in the `output/tsv` directory. At this stage, high-quality Nanopore reads are retained, and low-quality bases are masked. The next step is to detect crossover molecules from the .tsv files using `COmapper_ver1.2.5_git_upload.py`.
+6. The output of `COmapper_data_process_ver5.sh` is stored in the `output/tsv` directory. At this stage, high-quality Nanopore reads are retained, and low-quality bases are masked. The next step is to detect crossover molecules from the .tsv files using `COmapper_ver1.2.5_git_upload.py`.
 
-6. The `COmapper_ver1.2.5_git_upload.py` script requires four options
+7. The `COmapper_ver1.2.5_git_upload.py` script requires four options
 
    --inputfolder (-i) : input folder location (including .tsv files), default: current location
    
