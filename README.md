@@ -128,9 +128,9 @@ A test input file is provided in the `raw` directory (`test.fq.gz`).
      
        2: L-C simple crossover
      
-       11~14: C-L gene conversion associated crossover
+       11,13,15,17: C-L gene conversion associated crossover
      
-       15~18: L-C gene conversion associated crossover
+       12,14,16,18: L-C gene conversion associated crossover
      
    - CO_info: The information of the crossover site in the read with five elements. [chromosome number, nearest SNP position before crossover site, nearest SNP position after crossover site, mid-point of two nearest SNP positions, width of two nearest SNP positions
 
